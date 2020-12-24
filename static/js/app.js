@@ -129,8 +129,15 @@ function optionChanged(option = "940") {
     // data   
     var chartDataBubble = [trace2];
 
+    // layout
+    var layout = {  
+        xaxis:{
+            title: "OTU ID"
+        },
+    };
+
     // Render the plot to the div tag with id "plot"
-    Plotly.newPlot("bubble", chartDataBubble);
+    Plotly.newPlot("bubble", chartDataBubble, layout);
 
 
     });
